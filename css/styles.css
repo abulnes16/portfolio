@@ -20,7 +20,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+figure {
   margin: 0;
 }
 
@@ -131,6 +132,7 @@ ul {
   z-index: 4;
   left: 15px;
   top: 12px;
+  cursor: pointer;
 }
 
 .brand {
@@ -208,14 +210,18 @@ ul {
 }
 
 .social-media li {
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
   background-color: var(--color-primary);
   margin-right: 15px;
+}
+
+.social-media li:hover {
+  background-color: var(--color-dark);
 }
 
 /*--------------About me---------------*/
@@ -262,4 +268,83 @@ ul {
   left: 0;
   right: 0;
   background-color: var(--color-primary);
+}
+
+/*--------------Projects---------------*/
+
+.projects {
+  margin-top: 20px;
+  padding: 1.2em 1.4em;
+}
+
+.projects h3 {
+  text-align: center;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-items: center;
+  gap: 30px;
+  padding: 1.2em;
+}
+
+.project {
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.project__img-container {
+  width: 100%;
+  position: relative;
+}
+
+.project__img-container img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.project__info {
+  background-color: var(--color-light);
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding: 0.8em 1.4em;
+}
+
+.project-top {
+  position: relative;
+}
+
+.wave {
+  width: 100%;
+  position: absolute;
+  bottom: -10px;
+  z-index: 10;
+}
+
+.project__tech {
+  margin-top: 10px;
+}
+
+.tech-list {
+  display: flex;
+}
+
+.tech-list li {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  margin-right: 15px;
+}
+
+.project__description {
+  font-size: 0.8em;
 }
