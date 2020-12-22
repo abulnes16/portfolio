@@ -54,6 +54,7 @@ ul {
   color: var(--color-font);
   font-weight: bold;
   border-radius: 25px;
+  text-decoration: none;
 }
 
 .btn.btn-lg {
@@ -198,6 +199,14 @@ ul {
     width: 200px;
   }
 }
+@keyframes typing-xl {
+  from {
+    width: 0;
+  }
+  to {
+    width: 270px;
+  }
+}
 
 @keyframes animated-cursor {
   from {
@@ -304,6 +313,16 @@ ul {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.project-link {
+  text-decoration: none;
+  color: var(--color-font);
+  transition: 0.5s;
+}
+
+.project:hover {
+  transform: translateY(-10px);
+}
+
 .project__img-container {
   width: 100%;
   position: relative;
@@ -364,6 +383,11 @@ ul {
   padding: 2em 1.4em;
   align-items: center;
   justify-content: center;
+  background-color: var(--color-primary);
+  color: var(--color-light);
+}
+
+.contact .btn:hover {
   background-color: var(--color-primary);
   color: var(--color-light);
 }
@@ -437,6 +461,14 @@ ul {
 }
 
 @media screen and (min-width: 767px) {
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h3 {
+    font-size: 1.4em;
+  }
+
   .about-me__img {
     height: 55vh;
   }
@@ -462,6 +494,10 @@ ul {
     justify-content: space-evenly;
   }
 
+  .input {
+    font-size: 1.1em;
+  }
+
   .mr-2 {
     margin-right: 10px;
   }
@@ -469,6 +505,7 @@ ul {
   textarea {
     width: 100%;
     box-sizing: border-box;
+    font-family: inherit;
   }
 
   .footer .social-media {
@@ -489,12 +526,60 @@ ul {
   .about-me {
     display: flex;
     flex-direction: row;
+    font-size: 1.1em;
+  }
+
+  .about-me__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .about-me__description {
+    padding: 3em 2.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .about-me__description p {
+    text-align: start;
+  }
+
+  .about-me__description .d-flex {
+    justify-content: flex-start;
+  }
+
+  .about-me__description::before {
+    height: 100px;
+    width: 50px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 50px;
+    border-right: 0;
+    left: -45px;
+    right: initial;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
   }
 }
 
 @media screen and (min-width: 1023px) {
+  .hero {
+    font-size: 25px;
+    padding: 2.9em;
+  }
+  .hero__img-container {
+    width: 240px;
+    height: 240px;
+  }
+
+  .job {
+    animation-name: typing-xl, animated-cursor;
+  }
   .project-list {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
   .footer {
     display: flex;
@@ -504,6 +589,11 @@ ul {
 
   .menu-icon-container {
     display: none;
+  }
+
+  .tech-list li {
+    width: 40px;
+    height: 40px;
   }
 
   .menu {
@@ -523,5 +613,25 @@ ul {
   .menu ul li {
     margin-right: 20px;
     margin-bottom: 0;
+  }
+
+  .social-media li {
+    width: 65px;
+    height: 65px;
+  }
+
+  .footer .social-media li {
+    width: 50px;
+    height: 50px;
+  }
+
+  .contact h3 {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .footer .social-media {
+    margin-top: 0;
   }
 }
