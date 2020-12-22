@@ -45,6 +45,21 @@ ul {
   color: var(--color-light);
 }
 
+.btn {
+  border: none;
+  outline: none;
+  padding: 0.9em 1.6em;
+  background-color: var(--color-light);
+  color: var(--color-font);
+  border-radius: 25px;
+}
+
+.btn:hover {
+  background-color: var(--color-font);
+  color: var(--color-light);
+  cursor: pointer;
+}
+
 /* Components */
 
 /*--------------Header---------------*/
@@ -191,4 +206,46 @@ ul {
   border-radius: 50%;
   background-color: var(--color-primary);
   margin-right: 15px;
+}
+
+/*--------------About me---------------*/
+
+.about-me__img {
+  width: 100%;
+  height: 32.5vh;
+  margin: 0;
+}
+
+.about-me__img img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.about-me__description {
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  padding: 2.1em 1.4em;
+  position: relative;
+}
+
+.about-me__description span {
+  word-wrap: break-word;
+  line-height: 1.6em;
+}
+
+.about-me__description::before {
+  content: " ";
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  border-top-left-radius: 50px;
+  box-sizing: border-box;
+  border-top-right-radius: 50px;
+  border-bottom: 0;
+  top: -30px;
+  margin-right: auto;
+  margin-left: auto;
+  left: 0;
+  right: 0;
+  background-color: var(--color-primary);
 }
