@@ -112,9 +112,9 @@
         </figure>
         <div class="about-me__description">
           <span>
-            Mi nombre es Angel Bulnes, soy ingeniero en sistemas y estudiante de matemáticas, apasionado
-            por la programación y aprender cosas nuevas. Me gustan los
-            videojuegos, el voleibol y charlar sobre tecnología.
+            Mi nombre es Angel Bulnes, soy ingeniero en sistemas y estudiante de
+            matemáticas, apasionado por la programación y aprender cosas nuevas.
+            Me gustan los videojuegos, el voleibol y charlar sobre tecnología.
           </span>
           <p>¿Quieres que trabajemos juntos?</p>
           <div class="d-flex">
@@ -126,6 +126,7 @@
         <h3>Mis proyectos</h3>
         <div class="project-list">
           <a
+            aria-label="social-dashboard"
             href="https://abulnes16.github.io/social-dashboard/"
             class="project-link"
           >
@@ -176,7 +177,11 @@
               </div>
             </article>
           </a>
-          <a href="https://pokedexreact16.netlify.app/" class="project-link">
+          <a
+            aria-label="react-pokedex"
+            href="https://pokedexreact16.netlify.app/"
+            class="project-link"
+          >
             <article class="project">
               <div class="project-top">
                 <figure class="project__img-container">
@@ -214,6 +219,7 @@
             </article>
           </a>
           <a
+            aria-label="job-listing"
             href="https://fm-react-job-listing.netlify.app/"
             class="project-link"
           >
@@ -255,6 +261,7 @@
             </article>
           </a>
           <a
+            aria-label="population-simulator"
             href="https://ts-crecimiento-poblacional.web.app/"
             class="project-link"
           >
@@ -313,6 +320,7 @@
             </article>
           </a>
           <a
+            aria-label="sound-simulator"
             href="https://ts-sound-visualization.web.app/"
             class="project-link"
           >
@@ -377,13 +385,24 @@
         <div class="contact__container">
           <form class="contact__form">
             <div class="form__inputs">
-              <input class="input mr-2" type="text" placeholder="Nombre" />
-              <input class="input" type="text" placeholder="Correo" />
+              <input
+                aria-label="name"
+                class="input mr-2"
+                type="text"
+                placeholder="Nombre"
+              />
+              <input
+                aria-label="email"
+                class="input"
+                type="text"
+                placeholder="Correo"
+              />
             </div>
             <div class="input-textarea">
               <textarea
                 class="input"
-                name=""
+                aria-label="message"
+                name="message"
                 id=""
                 cols="30"
                 rows="5"
