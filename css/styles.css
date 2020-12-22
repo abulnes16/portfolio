@@ -51,13 +51,23 @@ ul {
   padding: 0.9em 1.6em;
   background-color: var(--color-light);
   color: var(--color-font);
+  font-weight: bold;
   border-radius: 25px;
+}
+
+.btn.btn-lg {
+  padding: 0.9em 5em;
 }
 
 .btn:hover {
   background-color: var(--color-font);
   color: var(--color-light);
   cursor: pointer;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: center;
 }
 
 /* Components */
@@ -231,6 +241,10 @@ ul {
 .about-me__description span {
   word-wrap: break-word;
   line-height: 1.6em;
+}
+
+.about-me__description p {
+  text-align: center;
 }
 
 .about-me__description::before {
