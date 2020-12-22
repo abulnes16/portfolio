@@ -9,6 +9,124 @@
       type="image/x-icon"
     />
     <title>Angel Bulnes | Portafolio</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="menu-icon-container">
+        <span
+          id="menu-btn"
+          class="iconify icon-lg burguer-btn"
+          data-icon="ant-design:menu-outlined"
+          data-inline="false"
+        ></span>
+      </div>
+      <div class="brand">
+        <h2>Angel Bulnes</h2>
+      </div>
+      <nav id="menu" class="menu is-active">
+        <ul>
+          <li class="menu-link"><a href="">Home</a></li>
+          <li class="menu-link"><a href="">Acerca de mi </a></li>
+          <li class="menu-link"><a href="">Proyectos</a></li>
+          <li class="menu-link"><a href="">Contáctame</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <figure class="hero__img-container">
+          <img
+            width="80"
+            class="hero__img"
+            src="assets/img/angel.jpg"
+            alt="Desarrollador"
+          />
+        </figure>
+        <div class="hero__greeting">
+          <h1>Hola, mi nombre es Angel</h1>
+          <p class="job">Desarrollador frontend</p>
+        </div>
+
+        <div class="social-media-container">
+          <ul class="social-media__links">
+            <li><a href="">Twitter</a></li>
+            <li><a href="">Linkedin</a></li>
+            <li><a href="">Instagram</a></li>
+            <li><a href="">Medium</a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="about-me">
+        <div class="about-me__img">
+          <figure>
+            <img width="100" src="assets/img/about-me.jpg" alt="Acerca de mi" />
+          </figure>
+        </div>
+        <div class="about-me__description">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi,
+            voluptatibus?
+          </p>
+          <p>Trabajemos juntos</p>
+          <button>Contáctame</button>
+        </div>
+      </section>
+      <section class="projects">
+        <h3>Mis proyectos</h3>
+        <div class="project-list">
+          <article class="project">
+            <figure class="project__img-container">
+              <img src="" alt="Imagen proyecto" />
+            </figure>
+            <div class="project__info">
+              <h5 class="project__title">Título del proyecto</h5>
+              <div class="project__tech">
+                <ul class="tech-list">
+                  <li>React</li>
+                  <li>Node.js</li>
+                  <li>SQL Server</li>
+                </ul>
+              </div>
+              <p class="project__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Explicabo, possimus?
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="contact">
+        <h3>Creemos algo juntos</h3>
+        <div class="contact__container">
+          <form class="contact__form">
+            <div>
+              <input type="text" placeholder="Nombre" />
+              <input type="text" placeholder="Correo" />
+            </div>
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Hablame de tu idea"
+            ></textarea>
+            <button>Enviar mensaje</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p class="footer__copyright">&copy; 2020 Angel Bulnes</p>
+      <ul class="social-media__links">
+        <li><a href="">Twitter</a></li>
+        <li><a href="">Linkedin</a></li>
+        <li><a href="">Instagram</a></li>
+        <li><a href="">Medium</a></li>
+      </ul>
+    </footer>
+    <script src="js/app.js"></script>
+  </body>
 </html>
