@@ -363,15 +363,13 @@ ul {
 .contact__container {
   background-color: var(--color-font);
   border-radius: 20px;
-  padding: .9em;
+  padding: 0.9em;
   margin-top: 20px;
 }
 
 .contact__form {
   padding: 1em 1.1em;
 }
-
-
 
 .input {
   margin-bottom: 10px;
@@ -387,4 +385,31 @@ ul {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
+}
+
+/*--------------Footer---------------*/
+
+.footer {
+  background-color: var(--color-font);
+  color: var(--color-light);
+  padding: 0.8em 1.4em;
+}
+
+.footer__copyright {
+  margin: 0;
+  text-align: center;
+}
+
+.social-media.social-light li {
+  background-color: var(--color-light);
+}
+.social-media.social-light li:hover {
+  background-color: var(--color-dark);
+}
+.social-media.social-light li:hover .link {
+  color: var(--color-light);
+}
+
+.link.light {
+  color: var(--color-dark);
 }
