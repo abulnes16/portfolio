@@ -92,7 +92,7 @@ ul {
   justify-content: center;
   background-color: #277a66ff;
   text-align: center;
-  position: absolute;
+  position: fixed;
   z-index: 4;
   left: 15px;
   top: 12px;
