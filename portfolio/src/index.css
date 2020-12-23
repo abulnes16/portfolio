@@ -220,26 +220,7 @@ ul {
 .social-media-container {
   margin-top: 20px;
 }
-.social-media {
-  display: flex;
-  justify-content: space-evenly;
-  padding: 10px;
-}
 
-.social-media li {
-  width: 45px;
-  height: 45px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  background-color: var(--color-primary);
-  margin-right: 15px;
-}
-
-.social-media li:hover {
-  background-color: var(--color-dark);
-}
 
 /*--------------About me---------------*/
 
