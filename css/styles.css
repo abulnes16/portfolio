@@ -616,8 +616,7 @@ ul {
   }
 
   .social-media li {
-    width: 65px;
-    height: 65px;
+    font-size: 0.8em;
   }
 
   .footer .social-media li {
