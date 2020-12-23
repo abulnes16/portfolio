@@ -3,7 +3,7 @@ import emailjs from "emailjs-com";
 
 import emailConfig from "../constants/email-template";
 
-init("user_G742lNwr15TC5iHfbnvng");
+init(process.env.REACT_APP_EMAILJS_USER);
 
 /**
  * Send an email with EmaiJS
