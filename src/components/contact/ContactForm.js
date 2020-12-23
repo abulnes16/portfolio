@@ -43,6 +43,9 @@ const ContactForm = () => {
         "Pronto nos pondremos en contacto contigo :D",
         "success"
       );
+      setEmail("");
+      setMessage("");
+      setName("");
     } catch (error) {
       console.log(error);
       Swal.fire(
