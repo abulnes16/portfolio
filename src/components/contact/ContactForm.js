@@ -84,7 +84,7 @@ const ContactForm = () => {
           id=""
           cols="30"
           rows="5"
-          placeholder="Hablame de tu idea"
+          placeholder="Cuentame de tu proyecto"
           onChange={(e) => setMessage(e.target.value)}
         ></textarea>
       </div>

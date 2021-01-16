@@ -8,7 +8,7 @@ const Hero = () => {
         <img
           width="80"
           className="hero__img"
-          src="assets/img/angel.jpg"
+          src="assets/img/angel-min-crop.jpg"
           alt="Desarrollador"
         />
       </figure>

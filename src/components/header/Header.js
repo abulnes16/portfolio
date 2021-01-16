@@ -22,16 +22,16 @@ const Header = () => {
       </div>
       <nav ref={menu} id="menu" className="menu">
         <ul>
-          <li className="menu-link">
+          <li className="menu-link" onClick={toggleMenu}>
             <a href="#hero">Home</a>
           </li>
-          <li className="menu-link">
+          <li className="menu-link" onClick={toggleMenu}>
             <a href="#about">Acerca de mi </a>
           </li>
-          <li className="menu-link">
+          <li className="menu-link" onClick={toggleMenu}>
             <a href="#projects">Proyectos</a>
           </li>
-          <li className="menu-link">
+          <li className="menu-link" onClick={toggleMenu}>
             <a href="#contact">Contáctame</a>
           </li>
         </ul>

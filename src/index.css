@@ -118,7 +118,7 @@ ul {
 }
 
 .menu-link:hover {
-  transform: translateY(-10px);
+  transform: scale(1.1);
 }
 
 .menu-icon-container {
@@ -178,7 +178,7 @@ ul {
   white-space: nowrap;
   margin: 0 auto;
   letter-spacing: 0.1em;
-  animation: typing 4s steps(29, end) 1s 1 normal both,
+  animation: typing 2s steps(29, end) 1s 1 normal both,
     animated-cursor 600ms steps(29, end) infinite;
 }
 
@@ -301,7 +301,7 @@ ul {
 }
 
 .project:hover {
-  transform: translateY(-10px);
+  transform: scale(1.1);
 }
 
 .project__img-container {
@@ -451,7 +451,7 @@ ul {
   }
 
   .about-me__img {
-    height: 55vh;
+    height: 65vh;
   }
 
   .hero__greeting h1 {
