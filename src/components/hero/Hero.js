@@ -8,17 +8,17 @@ const Hero = () => {
         <img
           width="80"
           className="hero__img"
-          src="assets/img/angel-min-crop.jpg"
+          src="assets/img/hero.webp"
           alt="Desarrollador"
         />
       </figure>
       <div className="hero__greeting">
         <h1>Hola, mi nombre es Angel 👋</h1>
-        <p className="job">Frontend Developer</p>
+        <p className="job">Software Engineer</p>
       </div>
 
       <div className="social-media-container">
-        <SocialMedia/>
+        <SocialMedia />
       </div>
     </section>
   );
