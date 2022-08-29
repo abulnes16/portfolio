@@ -188,7 +188,7 @@ ul {
     width: 0;
   }
   to {
-    width: 174px;
+    width: 170px;
   }
 }
 @keyframes typing-lg {
@@ -196,7 +196,7 @@ ul {
     width: 0;
   }
   to {
-    width: 200px;
+    width: 190px;
   }
 }
 @keyframes typing-xl {
@@ -204,7 +204,7 @@ ul {
     width: 0;
   }
   to {
-    width: 270px;
+    width: 260px;
   }
 }
 
@@ -451,7 +451,7 @@ ul {
   }
 
   .about-me__img {
-    height: 65vh;
+    height: 68vh;
   }
 
   .hero__greeting h1 {
