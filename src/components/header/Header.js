@@ -26,13 +26,13 @@ const Header = () => {
             <a href="#hero">Home</a>
           </li>
           <li className="menu-link" onClick={toggleMenu}>
-            <a href="#about">Acerca de mi </a>
+            <a href="#about">About Me </a>
           </li>
           <li className="menu-link" onClick={toggleMenu}>
-            <a href="#projects">Proyectos</a>
+            <a href="#projects">Projects</a>
           </li>
           <li className="menu-link" onClick={toggleMenu}>
-            <a href="#contact">Contáctame</a>
+            <a href="#contact">Contact Me</a>
           </li>
         </ul>
       </nav>

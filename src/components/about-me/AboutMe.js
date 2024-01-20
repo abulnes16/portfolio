@@ -8,21 +8,22 @@ const AboutMe = () => {
       </figure>
       <div className="about-me__description">
         <span>
-          Mi nombre es Angel Bulnes, soy ingeniero en sistemas, apasionado por
-          la programación y aprender cosas nuevas. Me gusta compartir el
-          conocimiento y crear comunidades para que otras personas puedan entrar
-          al mundo de la tecnología
+          My name is Angel Bulnes, I am a Software Engineer, passionate about
+          programming and learning new things. I like to share the
+          knowledge and create communities so that other people can enter
+          to the world of technology.
           <br />
           <br />
-          Soy desarrollador de software con experiencia en el desarrollo de
-          aplicaciones moviles bridge con React Native y aplicaciones web con
-          ReactJS. Actualmente estoy aprendiendo sobre desarrollo nativo con
-          Android e iOS.
+         I'm a Software Engineer with 5 years of experience, specialized in Mobile Development. I have experience
+         with React Native with JS & TS. Also I have experience building native apps with Android & iOS. 
+         Currently I'm studying native development with Jetpack Compose and Swift UI. 
+         I like to teach to other development good coding practices and I mentored different developers to 
+         reach their goals.
         </span>
-        <p>¿Quieres que trabajemos juntos?</p>
+        <p>Do you want us to work together?</p>
         <div className="d-flex">
           <a href="#contact" className="btn btn-lg">
-            Contáctame
+            Contact Me
           </a>
         </div>
       </div>

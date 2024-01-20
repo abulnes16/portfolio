@@ -9,11 +9,11 @@ const Hero = () => {
           width="80"
           className="hero__img"
           src="assets/img/hero.webp"
-          alt="Desarrollador"
+          alt="Developer"
         />
       </figure>
       <div className="hero__greeting">
-        <h1>Hola, mi nombre es Angel 👋</h1>
+        <h1>Hi, my name is Angel 👋</h1>
         <p className="job">Software Engineer</p>
       </div>
 

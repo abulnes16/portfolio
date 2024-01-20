@@ -16,8 +16,8 @@ const ContactForm = () => {
     // Empty fields validation
     if (name === "" || email === "" || message === "") {
       Swal.fire(
-        "Datos invalidos",
-        "Debes llenar todos los campos para enviar un mensaje",
+        "Invalid Data",
+        "You have to fill all the fields",
         "error"
       );
       return;
@@ -27,8 +27,8 @@ const ContactForm = () => {
     const emailReg = new RegExp(emailRegex);
     if (!emailReg.test(email)) {
       Swal.fire(
-        "Datos invalidos",
-        "El correo no tiene un formato valido",
+        "Invalid Data",
+        "The email format is incorrect",
         "error"
       );
       return;
@@ -39,8 +39,8 @@ const ContactForm = () => {
     try {
       await sendContactEmail(email, name, message);
       await Swal.fire(
-        "Mensaje enviado",
-        "Pronto nos pondremos en contacto contigo :D",
+        "Email Sent",
+        "Soon we'll be in touch with you :D",
         "success"
       );
       setEmail("");
@@ -49,8 +49,8 @@ const ContactForm = () => {
     } catch (error) {
       console.log(error);
       Swal.fire(
-        "Mensaje no enviado",
-        "No pudimos enviar tu mensaje :(",
+        "Failed Sending",
+        "We couldn't send the email, please try again",
         "error"
       );
     }
@@ -65,14 +65,14 @@ const ContactForm = () => {
           aria-label="name"
           className="input mr-2"
           type="text"
-          placeholder="Nombre"
+          placeholder="Name"
           onChange={(e) => setName(e.target.value)}
         />
         <input
           aria-label="email"
           className="input"
           type="text"
-          placeholder="Correo"
+          placeholder="Email"
           onChange={(e) => setEmail(e.target.value)}
         />
       </div>
@@ -84,13 +84,13 @@ const ContactForm = () => {
           id=""
           cols="30"
           rows="5"
-          placeholder="Cuentame de tu proyecto"
+          placeholder="Talk me about your project"
           onChange={(e) => setMessage(e.target.value)}
         ></textarea>
       </div>
       <div className="d-flex">
         <button type="submit" className="btn btn-lg">
-          {loading ? <Loader /> : "Enviar mensaje"}
+          {loading ? <Loader /> : "Send"}
         </button>
       </div>
     </form>
