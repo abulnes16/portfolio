@@ -12,7 +12,7 @@ const LanguageSwitcher = () => {
         { code: "pt", label: "PT", flag: "🇧🇷" },
     ];
 
-    const currentLang = languages.find((lang) => lang.code === i18n.language) || languages[0];
+    const currentLang = languages.find((lang) => i18n.language?.startsWith(lang.code)) || languages[0];
 
     const changeLanguage = (lng) => {
         i18n.changeLanguage(lng);
@@ -85,8 +85,8 @@ const LanguageSwitcher = () => {
                                     display: "flex",
                                     alignItems: "center",
                                     gap: "10px",
-                                    color: i18n.language === lang.code ? "var(--color-secondary)" : "var(--color-text-main)",
-                                    fontWeight: i18n.language === lang.code ? "600" : "400",
+                                    color: i18n.language?.startsWith(lang.code) ? "var(--color-secondary)" : "var(--color-text-main)",
+                                    fontWeight: i18n.language?.startsWith(lang.code) ? "600" : "400",
                                 }}
                             >
                                 <span>{lang.flag}</span>
