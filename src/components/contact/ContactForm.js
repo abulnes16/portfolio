@@ -63,9 +63,10 @@ const ContactForm = () => {
       <div className="form__inputs">
         <input
           aria-label="name"
-          className="input mr-2"
+          className="input"
           type="text"
           placeholder="Name"
+          value={name}
           onChange={(e) => setName(e.target.value)}
         />
         <input
@@ -73,6 +74,7 @@ const ContactForm = () => {
           className="input"
           type="text"
           placeholder="Email"
+          value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
       </div>
@@ -81,16 +83,17 @@ const ContactForm = () => {
           className="input"
           aria-label="message"
           name="message"
-          id=""
+          id="message"
           cols="30"
           rows="5"
-          placeholder="Talk me about your project"
+          placeholder="Tell me about your project"
+          value={message}
           onChange={(e) => setMessage(e.target.value)}
         ></textarea>
       </div>
-      <div className="d-flex">
-        <button type="submit" className="btn btn-lg">
-          {loading ? <Loader /> : "Send"}
+      <div className="d-flex" style={{ justifyContent: 'center' }}>
+        <button type="submit" className="btn" disabled={loading}>
+          {loading ? <Loader /> : "Send Message"}
         </button>
       </div>
     </form>
