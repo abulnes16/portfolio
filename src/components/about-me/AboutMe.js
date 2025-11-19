@@ -1,34 +1,31 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const AboutMe = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="about" className="about-me">
-      <div className="container about-me__container">
-        <div className="about-me__img">
-          <img src="assets/img/about-me.webp" alt="Angel Bulnes" />
+      <div className="about-me__container">
+        <div className="about-me__img-container">
+          <img
+            src="assets/img/about-me.webp"
+            alt="About Me"
+            className="about-me__img"
+          />
         </div>
-        <div className="about-me__description">
-          <h2>About Me</h2>
-          <p>
-            My name is Angel Bulnes, I am a Software Engineer passionate about
-            programming and learning new things. I love sharing knowledge and
-            building communities to help others enter the world of technology.
+        <div className="about-me__info">
+          <h2 className="section-title">{t('about.title')}</h2>
+          <p className="about-me__description">
+            <span>{t('about.p1')}</span>
+            <br /><br />
+            <span>{t('about.p2')}</span>
+            <br /><br />
+            <span>{t('about.p3')}</span>
           </p>
-          <p>
-            I have 5 years of experience, specialized in Mobile Development.
-            I have extensive experience with React Native (JS & TS) and building
-            native apps for Android & iOS. Currently, I'm expanding my skills
-            with Jetpack Compose and SwiftUI.
-          </p>
-          <p>
-            I enjoy teaching good coding practices and mentoring developers to help
-            them reach their goals.
-          </p>
-          <div style={{ marginTop: '2rem' }}>
-            <a href="#contact" className="btn">
-              Let's Work Together
-            </a>
-          </div>
+          <a href="#contact" className="btn about-me__btn">
+            {t('about.cta')}
+          </a>
         </div>
       </div>
     </section>

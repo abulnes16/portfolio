@@ -1,6 +1,10 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import Project from "./Project";
+
 const Projects = ({ projects }) => {
+  const { t } = useTranslation();
+
   return (
     <section id="projects" className="projects">
       <h3>Projects</h3>

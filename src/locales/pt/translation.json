@@ -1,0 +1,43 @@
+{
+    "header": {
+        "home": "Início",
+        "about": "Sobre Mim",
+        "projects": "Projetos",
+        "contact": "Contato"
+    },
+    "hero": {
+        "greeting": "Olá, sou Angel",
+        "job": "Engenheiro de Software e IA",
+        "description": "Especializo-me na construção de aplicações móveis de alto desempenho e na integração de soluções inteligentes de IA para resolver problemas do mundo real.",
+        "viewWork": "Ver Meus Trabalhos",
+        "contactMe": "Contate-me"
+    },
+    "about": {
+        "title": "Sobre Mim",
+        "p1": "Meu nome é Angel Bulnes, sou um Engenheiro de Software apaixonado por programação e aprender coisas novas. Adoro compartilhar conhecimento e construir comunidades para ajudar outros a entrar no mundo da tecnologia.",
+        "p2": "Tenho 5 anos de experiência, especializado em Desenvolvimento Móvel. Tenho ampla experiência com React Native (JS & TS) e construção de apps nativos para Android e iOS. Atualmente, estou expandindo minhas habilidades com Jetpack Compose e SwiftUI.",
+        "p3": "Gosto de ensinar boas práticas de código e mentorar desenvolvedores para ajudá-los a alcançar seus objetivos.",
+        "cta": "Vamos Trabalhar Juntos"
+    },
+    "projects": {
+        "title": "Projetos"
+    },
+    "contact": {
+        "title": "Vamos construir algo juntos",
+        "namePlaceholder": "Nome",
+        "emailPlaceholder": "Email",
+        "messagePlaceholder": "Conte-me sobre seu projeto",
+        "send": "Enviar Mensagem",
+        "sending": "Enviando...",
+        "successTitle": "Email Enviado",
+        "successMessage": "Em breve entraremos em contato com você :D",
+        "errorTitle": "Falha no Envio",
+        "errorMessage": "Não conseguimos enviar o email, por favor tente novamente",
+        "invalidData": "Dados Inválidos",
+        "fillAllFields": "Você deve preencher todos os campos",
+        "invalidEmail": "O formato do email está incorreto"
+    },
+    "footer": {
+        "copyright": "Angel Bulnes"
+    }
+}

@@ -1,8 +1,11 @@
 import React, { useRef, useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
+import LanguageSwitcher from "../LanguageSwitcher";
 
 const Header = () => {
   const menu = useRef(null);
   const [isScrolled, setIsScrolled] = useState(false);
+  const { t } = useTranslation();
 
   const toggleMenu = () => {
     menu.current.classList.toggle("is-active");
@@ -26,7 +29,7 @@ const Header = () => {
       <div className="brand">
         <a href="#hero">Angel Bulnes</a>
       </div>
-      
+
       <div className="menu-icon-container" onClick={toggleMenu}>
         <span
           id="menu-btn"
@@ -39,18 +42,19 @@ const Header = () => {
       <nav ref={menu} id="menu" className="menu">
         <ul>
           <li className="menu-link" onClick={toggleMenu}>
-            <a href="#hero">Home</a>
+            <a href="#hero">{t('header.home')}</a>
           </li>
           <li className="menu-link" onClick={toggleMenu}>
-            <a href="#about">About Me</a>
+            <a href="#about">{t('header.about')}</a>
           </li>
           <li className="menu-link" onClick={toggleMenu}>
-            <a href="#projects">Projects</a>
+            <a href="#projects">{t('header.projects')}</a>
           </li>
           <li className="menu-link" onClick={toggleMenu}>
-            <a href="#contact">Contact</a>
+            <a href="#contact">{t('header.contact')}</a>
           </li>
         </ul>
+        <LanguageSwitcher />
       </nav>
     </header>
   );

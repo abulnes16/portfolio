@@ -1,0 +1,43 @@
+{
+    "header": {
+        "home": "Inicio",
+        "about": "Sobre Mí",
+        "projects": "Proyectos",
+        "contact": "Contacto"
+    },
+    "hero": {
+        "greeting": "Hola, soy Angel",
+        "job": "Ingeniero de Software e IA",
+        "description": "Me especializo en construir aplicaciones móviles de alto rendimiento e integrar soluciones inteligentes de IA para resolver problemas del mundo real.",
+        "viewWork": "Ver Mis Trabajos",
+        "contactMe": "Contáctame"
+    },
+    "about": {
+        "title": "Sobre Mí",
+        "p1": "Mi nombre es Angel Bulnes, soy un Ingeniero de Software apasionado por la programación y aprender cosas nuevas. Me encanta compartir conocimientos y construir comunidades para ayudar a otros a entrar en el mundo de la tecnología.",
+        "p2": "Tengo 5 años de experiencia, especializado en Desarrollo Móvil. Tengo amplia experiencia con React Native (JS & TS) y construyendo apps nativas para Android e iOS. Actualmente, estoy expandiendo mis habilidades con Jetpack Compose y SwiftUI.",
+        "p3": "Disfruto enseñando buenas prácticas de código y mentoreando desarrolladores para ayudarlos a alcanzar sus metas.",
+        "cta": "Trabajemos Juntos"
+    },
+    "projects": {
+        "title": "Proyectos"
+    },
+    "contact": {
+        "title": "Construyamos algo juntos",
+        "namePlaceholder": "Nombre",
+        "emailPlaceholder": "Correo",
+        "messagePlaceholder": "Cuéntame sobre tu proyecto",
+        "send": "Enviar Mensaje",
+        "sending": "Enviando...",
+        "successTitle": "Correo Enviado",
+        "successMessage": "Pronto estaremos en contacto contigo :D",
+        "errorTitle": "Envío Fallido",
+        "errorMessage": "No pudimos enviar el correo, por favor intenta de nuevo",
+        "invalidData": "Datos Inválidos",
+        "fillAllFields": "Debes llenar todos los campos",
+        "invalidEmail": "El formato del correo es incorrecto"
+    },
+    "footer": {
+        "copyright": "Angel Bulnes"
+    }
+}

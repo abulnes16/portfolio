@@ -1,0 +1,43 @@
+{
+    "header": {
+        "home": "Home",
+        "about": "About Me",
+        "projects": "Projects",
+        "contact": "Contact"
+    },
+    "hero": {
+        "greeting": "Hello, I'm Angel",
+        "job": "Software Engineer & AI Engineer",
+        "description": "I specialize in building high-performance mobile applications and integrating intelligent AI solutions to solve real-world problems.",
+        "viewWork": "View My Work",
+        "contactMe": "Contact Me"
+    },
+    "about": {
+        "title": "About Me",
+        "p1": "My name is Angel Bulnes, I am a Software Engineer passionate about programming and learning new things. I love sharing knowledge and building communities to help others enter the world of technology.",
+        "p2": "I have 5 years of experience, specialized in Mobile Development. I have extensive experience with React Native (JS & TS) and building native apps for Android & iOS. Currently, I'm expanding my skills with Jetpack Compose and SwiftUI.",
+        "p3": "I enjoy teaching good coding practices and mentoring developers to help them reach their goals.",
+        "cta": "Let's Work Together"
+    },
+    "projects": {
+        "title": "Projects"
+    },
+    "contact": {
+        "title": "Let's build something together",
+        "namePlaceholder": "Name",
+        "emailPlaceholder": "Email",
+        "messagePlaceholder": "Tell me about your project",
+        "send": "Send Message",
+        "sending": "Sending...",
+        "successTitle": "Email Sent",
+        "successMessage": "Soon we'll be in touch with you :D",
+        "errorTitle": "Failed Sending",
+        "errorMessage": "We couldn't send the email, please try again",
+        "invalidData": "Invalid Data",
+        "fillAllFields": "You have to fill all the fields",
+        "invalidEmail": "The email format is incorrect"
+    },
+    "footer": {
+        "copyright": "Angel Bulnes"
+    }
+}
